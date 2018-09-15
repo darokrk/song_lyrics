@@ -8,19 +8,21 @@
 </head>
 
 <body>
-    <h1>Lyrics of a song search engine</h1>
-    <button id="search_artist">Search artist</button>
-    <input type="text" id="song-artist" />
-    <h2>Song artist:</h2>
-    <p id="artists">
+    <div class="container">
+        <h1>Lyrics of a song search engine</h1>
+        <button id="search_songLyrics">Get song lyrics</button>
+        <input type="text" id="song-artist" placeholder="Enter artist name" />
+        <input type="text" id="song-name" placeholder="Enter song name" />
+        <h2>Song lyrics:</h2>
+    </div>
+    <!-- <h1>Lyrics of a song search engine</h1>
+    <button id="search_songLyrics">Get song lyrics</button>
+    <input type="text" id="song-artist" placeholder="Enter artist name" />
+    <input type="text" id="song-name" placeholder="Enter song name" /> -->
 
-    </p>
-    <button id="search_artist">Search song</button>
-    <input type="text" id="song-artist" />
-    <h2>Song lyrics:</h2>
-    <p id="songs">
-
-    </p>
+    <div id="songs" class="lyrics_container">
+        
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
         crossorigin="anonymous"></script>
