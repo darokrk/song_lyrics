@@ -1,12 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #3e4e88;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .button {
+        margin: 10px;
+        padding: 14px 38px;
+        background: #f85959;
+        border: none;
+        border-radius: 20px;
+        font-weight: 700;
+        box-shadow: 0 5px 15px 0 #000;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
 }
-#songs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.lyrics__container {
+    max-width: 800px;
+    color: #000;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 30px;
+    text-indent: 20px;
+    background: #b8dff0;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px 0 #000;
+
+    .lyrics__header {
+        padding: 40px;
+        margin: 0;
+    }
+
+    .lyrics__content {
+        margin: 0;
+        padding: 0 60px;
+    }
+}
+
+.input {
+    position: relative;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #10abff, #1beabd);
+    padding: 3px;
+    display: inline-block;
+    border-radius: 9999em;
+    margin: 5px;
+
+    *:not(span) {
+        position: relative;
+        display: inherit;
+        border-radius: inherit;
+        margin: 0;
+        border: none;
+        outline: none;
+        padding: 0 .325em;
+        z-index: 1;
+
+        &:focus+span {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    span {
+        transform: scale(.993, .94);
+        transition: transform .5s, opacity .25s;
+        opacity: 0;
+        position: absolute;
+        z-index: 0;
+        margin: 4px;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        pointer-events: none;
+        box-shadow: inset 0 0 0 3px #fff,
+            0 0 0 4px #fff,
+            3px -3px 30px #1beabd,
+            -3px 3px 30px #10abff;
+    }
+
 }

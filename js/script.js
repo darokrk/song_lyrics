@@ -6,8 +6,8 @@ function showSongLyrics(resp) {
     var title = $('#song-name').val();
     songsList.empty();
     songsList
-        .append($('<h2>').text(author + ' - ' + title))
-        .append($('<p>').text(resp.lyrics))
+        .append($('<h2>').addClass('lyrics__header').text(author + ' - ' + title))
+        .append($('<p>').addClass('lyrics__content').text(resp.lyrics))
     $('#song-artist').val('');
     $('#song-name').val('');
 
@@ -32,3 +32,9 @@ function searchSongLyrics() {
 };
 
 $('#search_songLyrics').click(searchSongLyrics);
+
+$(document).keypress(function (e) {
+    if (e.which == 13) {
+        searchSongLyrics();
+    }
+});

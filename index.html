@@ -10,18 +10,20 @@
 <body>
     <div class="container">
         <h1>Lyrics of a song search engine</h1>
-        <button id="search_songLyrics">Get song lyrics</button>
-        <input type="text" id="song-artist" placeholder="Enter artist name" />
-        <input type="text" id="song-name" placeholder="Enter song name" />
-        <h2>Song lyrics:</h2>
+        <!-- <input id="song-artist" class="input" type="text" placeholder="Enter artist name" />
+        <input id="song-name" class="input" type="text" placeholder="Enter song name" /> -->
+        <span class="input">
+            <input id="song-artist" type="text" placeholder="Enter artist name" />
+            <span></span>
+        </span>
+        <span class="input">
+            <input id="song-name" type="text" placeholder="Enter song name" />
+            <span></span>
+        </span>
+        <button id="search_songLyrics" class="button">Get song lyrics</button>
     </div>
-    <!-- <h1>Lyrics of a song search engine</h1>
-    <button id="search_songLyrics">Get song lyrics</button>
-    <input type="text" id="song-artist" placeholder="Enter artist name" />
-    <input type="text" id="song-name" placeholder="Enter song name" /> -->
+    <div id="songs" class="lyrics__container">
 
-    <div id="songs" class="lyrics_container">
-        
     </div>
 
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
