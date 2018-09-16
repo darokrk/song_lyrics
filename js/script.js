@@ -15,7 +15,7 @@ function showSongLyrics(resp) {
 
 function failSearching() {
     songsList.empty();
-    songsList.append($('<p>').text('No lyrics found'))
+    songsList.append($('<p>').addClass('lyrics__content--error').text('No lyrics found'));
 };
 
 function searchSongLyrics() {

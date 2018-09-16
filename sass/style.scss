@@ -16,10 +16,15 @@ body {
     justify-content: center;
     align-items: center;
 
+    .container__header {
+        font-size: 3rem;
+    }
+
     .button {
         margin: 10px;
         padding: 14px 38px;
         background: #f85959;
+        font-size: 1rem;
         border: none;
         border-radius: 20px;
         font-weight: 700;
@@ -46,6 +51,7 @@ body {
     background: #b8dff0;
     border-radius: 30px;
     box-shadow: 0 5px 15px 0 #000;
+    font-size: 1.2rem;
 
     .lyrics__header {
         padding: 40px;
@@ -55,6 +61,9 @@ body {
     .lyrics__content {
         margin: 0;
         padding: 0 60px;
+    }
+    .lyrics__content--error {
+        padding: 40px;
     }
 }
 
@@ -66,6 +75,9 @@ body {
     display: inline-block;
     border-radius: 9999em;
     margin: 5px;
+    .input__content {
+        font-size: 1.4rem;
+    }
 
     *:not(span) {
         position: relative;
