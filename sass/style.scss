@@ -32,7 +32,8 @@ body {
 
         &:hover {
             cursor: pointer;
-            transform: scale(1.05);
+            transform: scale(1.15);
+            transition: 0.6s;
         }
 
         &:focus {
@@ -60,7 +61,7 @@ body {
 
     .lyrics__content {
         margin: 0;
-        padding: 0 60px;
+        padding: 0 60px 30px;
     }
     .lyrics__content--error {
         padding: 40px;

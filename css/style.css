@@ -9,7 +9,7 @@ body { background: #3e4e88; color: #fff; font-family: 'Lato', sans-serif; }
 
 .container .button { margin: 10px; padding: 14px 38px; background: #f85959; font-size: 1rem; border: none; border-radius: 20px; font-weight: 700; box-shadow: 0 5px 15px 0 #000; }
 
-.container .button:hover { cursor: pointer; transform: scale(1.05); }
+.container .button:hover { cursor: pointer; transform: scale(1.15); transition: 0.6s; }
 
 .container .button:focus { outline: 0; }
 
@@ -17,7 +17,7 @@ body { background: #3e4e88; color: #fff; font-family: 'Lato', sans-serif; }
 
 .lyrics__container .lyrics__header { padding: 40px; margin: 0; }
 
-.lyrics__container .lyrics__content { margin: 0; padding: 0 60px; }
+.lyrics__container .lyrics__content { margin: 0; padding: 0 60px 30px; }
 
 .lyrics__container .lyrics__content--error { padding: 40px; }
 
